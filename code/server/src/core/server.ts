@@ -6,7 +6,7 @@ import express, {
 } from "express";
 import http from 'node:http';
 import HomepageRouter from "../router/homepage_router.js";
-import NotFoundRouter from "../router/not_found_router copy.js";
+import NotFoundRouter from "../router/not_found_router.js";
 
 class Server {
 	// propiriétés
