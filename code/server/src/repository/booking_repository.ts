@@ -1,4 +1,4 @@
-import Booking from "../model/Booking.js";
+import Booking from "../model/roles.js";
 import MySQLService from "../service/mysql_service.js";
 
 class BookingRepository {
@@ -36,7 +36,7 @@ class BookingRepository {
 		}
 	};
 
-	public selectOne = async(data: Partial<Roles>,): Promise<Booking | unknown>=>  {
+	public selectOne = async(data: Partial<Booking>,): Promise<Booking | unknown>=>  {
 		// connexion au serveur MySQL
 		const connection = await new MySQLService().connect();
 		// requête SQL

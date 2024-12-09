@@ -1,7 +1,7 @@
 import Roles from "../model/roles.js";
 import MySQLService from "../service/mysql_service.js";
 
-class RolesRepository {
+class TypesModelRepository {
 	// nom de la table en SQL
 	private table = "roles";
 
