@@ -1,9 +1,9 @@
-import Roles from "../model/roles.js";
+import User from "../model/roles.js";
 import MySQLService from "../service/mysql_service.js";
 
-class RolesRepository {
+class UserRepository {
 	// nom de la table en SQL
-	private table = "roles";
+	private table = "user";
 
 	// récuperer tous les enregistrements
 	// async crée une promesse
@@ -11,7 +11,7 @@ class RolesRepository {
 
 
 	
-	public selectAll = async (): Promise<Roles | unknown>=>  {
+	public selectAll = async (): Promise<User | unknown>=>  {
 		// connexion au serveur MySQL
 		const connection = await new MySQLService().connect();
 		// requête SQL
@@ -36,7 +36,7 @@ class RolesRepository {
 		}
 	};
 
-	public selectOne = async(data: Partial<Roles>,): Promise<Roles | unknown>=>  {
+	public selectOne = async(data: Partial<User>,): Promise<User | unknown>=>  {
 		// connexion au serveur MySQL
 		const connection = await new MySQLService().connect();
 		// requête SQL
@@ -67,4 +67,4 @@ class RolesRepository {
 	};
 }
 
-export default RolesRepository;
+export default UserRepository;
