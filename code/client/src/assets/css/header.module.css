@@ -1,0 +1,7 @@
+/* le suffixe module.css permet d'isoler les styles d'un composant */
+
+.site-header{
+    background-color: brown;
+    padding: 1rem;
+}
+
