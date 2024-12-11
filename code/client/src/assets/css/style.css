@@ -1,3 +1,12 @@
 /* style communs à toutes les pages */
+:root{
+    --bordeaux: #6D071A;
+    --rose: #E97A66;
+    --bcasser: #FFFFD8;
+    --rosef: #BA4C3D;
+    --fade: #A66860;
+}
 
-* {box-sizing: border-box;}
+*{box-sizing: border-box;}
+
+img{width:100%;}
