@@ -1,8 +1,8 @@
 /* le suffixe module.css permet d'isoler les styles d'un composant */
 
 
-.site-header{background-color: var(--bordeaux); padding: 1rem;}
+.site-header{background-color: var(--bordeaux); justify-content: space-between;}
 
-.site-logo{width:7rem;}
+.site-logo{width:6rem;}
 
 .btn-nav-mobile{display:none;}

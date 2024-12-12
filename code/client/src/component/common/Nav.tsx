@@ -7,7 +7,7 @@ const Nav = () => {
 	// les attributs href sont remplacer par to
 	// créer une référence : lien vers les éléments HTML remplace l'utilisation de querySelector / querySelectorAll
 
-	const siteNav = useRef();
+	const siteNav = useRef<HTMLDivElement>(null);
 
 	const [navMobileIsVisible, setNavMobileIsVisible] = useState<boolean>(false);
 	// clic sur le bouton de la navigation mobile
@@ -23,6 +23,8 @@ const Nav = () => {
 			>
 				<Link to={"/"}>Home</Link>
 				<Link to={"/contact"}>Contact</Link>
+				<Link to={"/prestation"}>Prestation</Link>
+				<Link to={"/reserver"}>Reserver</Link>
 			</nav>
 			{}
 
@@ -31,7 +33,7 @@ const Nav = () => {
 				type="button"
 				onClick={click}
 			>
-				Prestation
+				Reserver
 			</button>
 		</>
 	);

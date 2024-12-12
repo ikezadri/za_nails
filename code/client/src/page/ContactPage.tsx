@@ -1,9 +1,10 @@
 import Header from "../component/common/Header";
+import Footer from "../component/common/Footer";
 
 const ContactPage = () => {
 	return ( 
     <>  
-    <h1>Contact</h1>
+    <h1>Qui veut mon 06 ?</h1>
     </>
     );
 };
