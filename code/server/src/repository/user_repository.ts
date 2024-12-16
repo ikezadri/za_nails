@@ -1,6 +1,6 @@
 
 import type User from "../model/user.js";
-import Roles from "../model/roles.js";
+import  type Roles from "../model/roles.js";
 import MySQLService from "../service/mysql_service.js";
 import RolesRepository from "./roles_repository.js";
 
