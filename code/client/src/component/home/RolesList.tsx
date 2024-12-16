@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import RolesAPI from "../../service/roles_api";
-import types Roles from "../../model/roles.ts"
+import Roles from "../../model/roles.ts"
 
 const RolesList = () => {
     useEffect(() => {

@@ -1,4 +1,4 @@
-import TypesModel from "../model/roles.js";
+import type TypesModel from "../model/type_model.js";
 import MySQLService from "../service/mysql_service.js";
 
 class TypesModelRepository {
@@ -29,7 +29,19 @@ class TypesModelRepository {
 		try {
 			// récuperation des résultats de la requête
 			const [results] = await connection.execute(sql);
+
+			for (let i = 0; i < (results as TypesModel[]).length; i++) {
+				const result = (results as TypesModel[])[i];
+				// console.log(result);
+
+				result.types = (await new TypesRepository().selectOne({
+					id: result.types_id,
+				})) as Types;
+			}
+
 			return results;
+
+			
 		} catch (error) {
 			// si la requête à échouer
 			return error;
