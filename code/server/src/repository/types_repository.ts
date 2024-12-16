@@ -1,4 +1,4 @@
-import Types from "../model/roles.js";
+import type Types from "../model/types.js";
 import MySQLService from "../service/mysql_service.js";
 
 class TypesRepository {
@@ -9,9 +9,7 @@ class TypesRepository {
 	// async crée une promesse
 	// la fonction renvoie un object unknown lorsqu'une erreur est renvoyée
 
-
-	
-	public selectAll = async (): Promise<Types | unknown>=>  {
+	public selectAll = async (): Promise<Types[] | unknown> => {
 		// connexion au serveur MySQL
 		const connection = await new MySQLService().connect();
 		// requête SQL
@@ -22,7 +20,6 @@ class TypesRepository {
                 ${process.env.MYSQL_DATABASE}.${this.table}
             ;
         `;
-		
 
 		//  exécuter la requête
 		// try / catch : permet d'exécuter une instruction, si l'instruction échoue, une erreur est recupérée
@@ -36,12 +33,12 @@ class TypesRepository {
 		}
 	};
 
-	public selectOne = async(data: Partial<Types>,): Promise<Types | unknown>=>  {
+	public selectOne = async (data: Partial<Types>): Promise<Types | unknown> => {
 		// connexion au serveur MySQL
 		const connection = await new MySQLService().connect();
 		// requête SQL
 		// SELECT roles.* FROM za_nails WHERE roles.id = 1;
-		// créer une variable de requête SQL en préfixant le nom d'une variable par : 
+		// créer une variable de requête SQL en préfixant le nom d'une variable par :
 		const sql = `
             SELECT 
                 ${this.table}.*
@@ -51,7 +48,6 @@ class TypesRepository {
 				${this.table}.id = :id
             ;
         `;
-		
 
 		//  exécuter la requête
 		// try / catch : permet d'exécuter une instruction, si l'instruction échoue, une erreur est recupérée
@@ -59,7 +55,8 @@ class TypesRepository {
 			// récuperation des résultats de la requête
 			// results représente le premier indice d'un array envoyer
 			const [results] = await connection.execute(sql, data);
-			return results;
+			const result = (results as Types[]).shift() as Types;
+			return result;
 		} catch (error) {
 			// si la requête à échouer
 			return error;

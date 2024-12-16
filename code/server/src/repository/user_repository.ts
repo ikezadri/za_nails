@@ -33,6 +33,12 @@ class UserRepository {
 			// récuperation des résultats de la requête
 			const [results] = await connection.execute(sql);
 
+			const result = (results as User[]).shift() as User;
+
+			result.roles = (await new RolesRepository().selectOne({
+				id: result.roles_id,
+			})) as Roles;
+
 			for(let i = 0; i < (results as User[]).length; i++){
 				const result = (results as User[])[i];
 				// console.log(result);

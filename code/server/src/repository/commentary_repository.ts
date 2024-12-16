@@ -1,4 +1,4 @@
-import Commentary from "../model/roles.js";
+import  type Commentary from "../model/commentary.js";
 import MySQLService from "../service/mysql_service.js";
 
 class CommentaryRepository {

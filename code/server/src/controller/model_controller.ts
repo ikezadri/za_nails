@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import ModelRepository from "../repository/roles_repository.js";
+import ModelRepository from "../repository/model_repository.js";
 
 class ModelController {
     public index = async (req: Request, res: Response) => {

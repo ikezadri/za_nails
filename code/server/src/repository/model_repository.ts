@@ -1,4 +1,4 @@
-import Model from "../model/model.js";
+import type Model from "../model/model.js";
 import MySQLService from "../service/mysql_service.js";
 
 class ModelRepository {

@@ -1,5 +1,5 @@
 import express, {type Request, type Response} from "express";
-import BookingController from "../controller/roles_controller.js";
+import BookingController from "../controller/booking_controller.js";
 
 class BookingRouter{
     // propiétés
