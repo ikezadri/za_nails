@@ -93,17 +93,17 @@ VALUES
     (NULL,'Nita','ongles',2);
 
 -- modifier des enregistrements
-UPDATE za_nails_dev.roles
--- SET = permet de cibler les colonnes à mettre à jour, et leurs affecter une nouvelle valeur
-SET 
-    roles.name = 'linda'
--- WHERE = permet de créer une condition , cibler une colonne et une valeur
-WHERE 
-    roles.id = 1;
+-- UPDATE za_nails_dev.roles
+-- -- SET = permet de cibler les colonnes à mettre à jour, et leurs affecter une nouvelle valeur
+-- SET 
+--     roles.name = 'linda'
+-- -- WHERE = permet de créer une condition , cibler une colonne et une valeur
+-- WHERE 
+--     roles.id = 1;
 
--- supprimer un enregistrement 
-DELETE FROM za_nails_dev.roles
-WHERE 
-    roles.id = 3;
+-- -- supprimer un enregistrement 
+-- DELETE FROM za_nails_dev.roles
+-- WHERE 
+--     roles.id = 3;
 
 -- jointure avec une table de jointure 

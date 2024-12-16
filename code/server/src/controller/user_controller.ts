@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import UserRepository from "../repository/roles_repository.js";
+import UserRepository from "../repository/user_repository.js";
 
 class UserController {
     public index = async (req: Request, res: Response) => {
@@ -18,7 +18,7 @@ class UserController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'linda',
             data: results
         });
     };
@@ -39,7 +39,7 @@ class UserController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'linda',
             data: results
         });
     };

@@ -1,10 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import RolesAPI from "../../service/roles_api";
+import types Roles from "../../model/roles.ts"
 
 const RolesList = () => {
     useEffect(() => {
-        new RolesAPI().selectAll();
-        
+
+        const [roles,setRoles] = useState<>([]);
+
+
+
+        new RolesAPI().selectAll().then((results) => setRoles(results.data));
     }, []);
     
     return <>yolo</>;

@@ -9,6 +9,11 @@ import HomepageRouter from "../router/homepage_router.js";
 import NotFoundRouter from "../router/not_found_router.js";
 import RolesRouter from "../router/roles_router.js";
 import cors from "cors";
+import BookingRouter from "../router/booking_router.js";
+import CommentaryRouter from "../router/commentary_router.js";
+import TypesModelRouter from "../router/type_model_router.js";
+import UserRouter from "../router/user_router.js";
+import ModelRouter from "../router/model_router.js";
 
 class Server {
 	// propiriétés
@@ -29,6 +34,13 @@ class Server {
 		//préfixe à toutes les routes d'un routeur
 		this.router.use("/", new HomepageRouter().getRoutes());
 		this.router.use("/roles", new RolesRouter().getRoutes());
+		this.router.use("/booking", new BookingRouter().getRoutes());
+		this.router.use("/commentary", new CommentaryRouter().getRoutes());
+		this.router.use("/types", new TypesModelRouter().getRoutes());
+		this.router.use("/user", new UserRouter().getRoutes());
+		this.router.use("/model", new ModelRouter().getRoutes());
+		this.router.use("/type_model", new TypesModelRouter().getRoutes());
+
 		// routeur des routes inexistantes doit être obligatoirement en dernière position
 		this.router.use("*", new NotFoundRouter().getRoutes());
 	};

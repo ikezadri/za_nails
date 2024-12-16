@@ -1,5 +1,5 @@
 import express, {type Request, type Response} from "express";
-import UserController from "../controller/roles_controller.js";
+import UserController from "../controller/user_controller.js";
 
 class UserRouter{
     // propiétés

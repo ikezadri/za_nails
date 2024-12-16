@@ -1,5 +1,8 @@
-import User from "../model/roles.js";
+
+import type User from "../model/user.js";
+import Roles from "../model/roles.js";
 import MySQLService from "../service/mysql_service.js";
+import RolesRepository from "./roles_repository.js";
 
 class UserRepository {
 	// nom de la table en SQL
@@ -29,6 +32,14 @@ class UserRepository {
 		try {
 			// récuperation des résultats de la requête
 			const [results] = await connection.execute(sql);
+
+			for(let i = 0; i < (results as User[]).length; i++){
+				const result = (results as User[])[i];
+				// console.log(result);
+				result.roles = (await new RolesRepository().selectOne({
+					id: result.roles_id,
+				})) as Roles;
+			}
 			return results;
 		} catch (error) {
 			// si la requête à échouer
