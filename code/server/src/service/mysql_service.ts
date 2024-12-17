@@ -12,7 +12,7 @@ class MySQLService{
         // créer un temps d'attente dans le code 
         // récuperer le contenu d'une promesse
         if (!MySQLService.connection){
-            return await mysql.createPool({
+             MySQLService.connection = await mysql.createPool({
                 host: process.env.MYSQL_HOST,
                 user: process.env.MYSQL_USER,
                 password: process.env.MYSQL_PASSWORD,

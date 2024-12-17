@@ -92,6 +92,7 @@ VALUES
     (NULL,'Juju','capsule',1),
     (NULL,'Nita','ongles',2);
 
+
 -- modifier des enregistrements
 -- UPDATE za_nails_dev.roles
 -- -- SET = permet de cibler les colonnes à mettre à jour, et leurs affecter une nouvelle valeur

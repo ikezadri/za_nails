@@ -18,7 +18,7 @@ class BookingController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'genie musicale',
             data: results
         });
     };
@@ -39,7 +39,7 @@ class BookingController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'jai pas idée',
             data: results
         });
     };

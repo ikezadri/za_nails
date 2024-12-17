@@ -1,5 +1,5 @@
 import express, {type Request, type Response} from "express";
-import TypesController from "../controller/roles_controller.js";
+import TypesController from "../controller/types_controller.js";
 
 class TypesRouter{
     // propiétés

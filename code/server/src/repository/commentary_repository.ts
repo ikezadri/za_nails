@@ -31,9 +31,9 @@ class CommentaryRepository {
 				const result = (results as Commentary[])[i];
 				// console.log(result);
 
-				result.types = (await new TypesRepository().selectOne({
-					id: result.id,
-				})) as Types;
+				// result.types = (await new TypesRepository().selectOne({
+				// 	id: result.id,
+				// })) as Types;
 			}
 
 			return results;

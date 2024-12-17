@@ -18,7 +18,7 @@ class CommentaryController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'frenchie shore',
             data: results
         });
     };
@@ -39,7 +39,7 @@ class CommentaryController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'cartel de foufoune',
             data: results
         });
     };

@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import TypesRepository from "../repository/roles_repository.js";
+import TypesRepository from "../repository/types_repository.js";
 
 class TypesController {
     public index = async (req: Request, res: Response) => {
@@ -18,7 +18,7 @@ class TypesController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'kehlani',
             data: results
         });
     };
@@ -39,7 +39,7 @@ class TypesController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'linda>>>>>',
             data: results
         });
     };

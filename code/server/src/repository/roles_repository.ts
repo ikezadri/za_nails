@@ -1,4 +1,4 @@
-import Roles from "../model/roles.js";
+import type Roles from "../model/roles.js";
 import MySQLService from "../service/mysql_service.js";
 
 class RolesRepository {

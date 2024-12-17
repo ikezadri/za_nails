@@ -18,7 +18,7 @@ class ModelController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'sur ma route',
             data: results
         });
     };
@@ -39,7 +39,7 @@ class ModelController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'black dance',
             data: results
         });
     };

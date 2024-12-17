@@ -18,7 +18,7 @@ class RolesController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'jtm linda',
+            message: 'sza',
             data: results
         });
     };
@@ -39,7 +39,7 @@ class RolesController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'lindaf',
+            message: 'kendrick',
             data: results
         });
     };

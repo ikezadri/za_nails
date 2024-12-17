@@ -1,5 +1,5 @@
 import express, {type Request, type Response} from "express";
-import ModelController from "../controller/roles_controller.js";
+import ModelController from "../controller/model_controller.js";
 
 class ModelRouter{
     // propiétés

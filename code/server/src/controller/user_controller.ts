@@ -18,7 +18,7 @@ class UserController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'linda',
+            message: 'fromage',
             data: results
         });
     };
@@ -39,7 +39,7 @@ class UserController {
         // json: formater une réponse en JSON
         res.status(200).json({
             status: 200,
-            message: 'linda',
+            message: 'bob leponge',
             data: results
         });
     };

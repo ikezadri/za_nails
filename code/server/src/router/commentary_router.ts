@@ -1,5 +1,5 @@
 import express, {type Request, type Response} from "express";
-import CommentaryController from "../controller/roles_controller.js";
+import CommentaryController from "../controller/commentary_controller.js";
 
 class CommentaryRouter{
     // propiétés
