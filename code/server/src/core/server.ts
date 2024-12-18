@@ -14,6 +14,7 @@ import CommentaryRouter from "../router/commentary_router.js";
 import UserRouter from "../router/user_router.js";
 import ModelRouter from "../router/model_router.js";
 import TypesRouter from "../router/types_router.js";
+import ContactRouter from "../router/contact_router.js";
 
 class Server {
 	// propiriétés
@@ -39,6 +40,7 @@ class Server {
 		this.router.use("/types", new TypesRouter().getRoutes());
 		this.router.use("/user", new UserRouter().getRoutes());
 		this.router.use("/model", new ModelRouter().getRoutes());
+		this.router.use("/contact", new ContactRouter().getRoutes());
 		
 
 		// routeur des routes inexistantes doit être obligatoirement en dernière position

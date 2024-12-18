@@ -1,29 +1,27 @@
 import { useEffect, useState } from "react";
 import RolesAPI from "../../service/roles_api";
-import  type Roles from "../../model/roles"
+import type Roles from "../../model/roles";
 
 const RolesList = () => {
-    useEffect(() => {
+	const [roles, setRoles] = useState<Roles[]>([]);
 
-        const [roles, setRoles] = useState<Roles[]>([]);
+	useEffect(() => {
+		new RolesAPI().selectAll().then((results) => setRoles(results.data));
+	}, []);
 
-
-        new RolesAPI().selectAll().then((results) => setRoles(results.data));
-    }, []);
-    
-    return (
-        <>
-            {/*
+	return (
+		<>
+			{/*
          map est la seule boucle disponible dans le HTML de react 
 
          les accolades dans le HTML permettent de séparer la partie HTML de la partie JS
          une propriété key, contanant uen valeur unique , est obligatoire lorsqu'une boucle est créé
      */}
-            {/* {roles.map((result) => (
+			{roles.map((result) => (
                 <p key={ Math.random()}>{result.name}</p>
-            ))} */}
-        </>
-    );
+            ))}
+		</>
+	);
 };
 
 export default RolesList;
