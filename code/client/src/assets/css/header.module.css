@@ -1,7 +1,7 @@
 /* le suffixe module.css permet d'isoler les styles d'un composant */
 
-.site-header{background-color: var(--bordeaux); justify-content:space-between; align-items: center; height: 10rem;} 
+.site-header{background-color: var(--beige2); display:flex; height:6rem; justify-content:space-between; align-items:center;} 
 
-.site-logo{width:9rem; display: flex; align-items: center;} 
+.site-logo{width:7rem; display:block;} 
 
 .btn-nav-mobile{display:none;}
