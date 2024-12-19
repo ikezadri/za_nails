@@ -12,6 +12,7 @@ const Header = () => {
 				<Link to={"/"}>
 					<img src="/img/za.nails.png" alt="" />
 				</Link>
+
 			</div>
 			<button className={styles["btn-nav-mobile"]} type="button">Réservation</button>
 			<Nav />

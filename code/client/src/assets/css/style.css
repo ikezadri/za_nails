@@ -13,6 +13,7 @@
 *{box-sizing: border-box;}
 
 img{width:100%;}
+.cerise{width:100%;}
 
 a{text-decoration:none; color: var(--rosef); font-size:medium; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
