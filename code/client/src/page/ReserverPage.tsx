@@ -1,6 +1,3 @@
-import Header from "../component/common/Header";
-import Footer from "../component/common/Footer";
-
 const ReserverPage = () => {
 	//    fragment : balise sans nom (anonyme) = <> </>
 	return (

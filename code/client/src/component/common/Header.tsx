@@ -13,8 +13,8 @@ const Header = () => {
 					<img src="/img/za.nails.png" alt="" />
 				</Link>
 			</div>
+			<button className={styles["btn-nav-mobile"]} type="button">Réservation</button>
 			<Nav />
-			<button className={styles["btn-nav-mobile"]} type="button">Prestation</button>
 		</header>
 	);
 };

@@ -1,12 +1,11 @@
 .btn-nav-mobile{display:none;}
 
-.site-nav{display:block;}
+.site-nav{display:flex; height:10rem; background: var(--fade);column-gap: 15rem; justify-content: center; padding: 2rem}
 
-@media screen and (max-width: 50rem) {
-    .btn-nav-mobile{
-        display:block;
-    }
+@media screen and (max-width:50rem) {
+    .btn-nav-mobile{display:block;}
     .site-nav{display:none;}
-    .site-nav-visible{display:block;}
-}
+    .site-nav-visible{display:block;}}
+
+
 

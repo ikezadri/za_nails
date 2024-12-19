@@ -1,6 +1,3 @@
-import Header from "../component/common/Header";
-import Footer from "../component/common/Footer";
-
 const ContactPage = () => {
 	return ( 
     <>  
@@ -10,3 +7,5 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+

@@ -10,3 +10,7 @@
 *{box-sizing: border-box;}
 
 img{width:100%;}
+
+a{text-decoration: none; color: black; font-size:medium;}
+
+.container{width: 80rem; margin-inline: auto;} 
