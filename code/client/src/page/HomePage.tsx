@@ -11,10 +11,9 @@ const HomePage = () => {
 			<div className={styles.serpent}>
                 {/* utiliser / pour cibler le dossier public */}
                 <Link to={"/"}>
-                    <img src="/public/img/serpent.jpg" alt="" />
+                    <img src="/img/serpent.jpg" alt="" />
                 </Link>
             </div>
-
 		</>
 		
 	);

@@ -1,11 +1,10 @@
 .btn-nav-mobile{display:none;}
 
-.site-nav{display:flex; column-gap:13rem; justify-content:center; padding:10rem;}
+.site-nav{display:flex; column-gap:9rem; justify-content:center; padding:10rem;}
 
 @media screen and (max-width:50rem){
     .btn-nav-mobile{display:block;}
     .site-nav{display:none;}
     .site-nav-visible{display:block;}}
 
-
-
+.btn-rdv{background: var(--rosef); border-radius:10%; border:none; height:2rem; width:6rem; margin:4rem; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:var(--beige2);} 

@@ -6,15 +6,12 @@
     --rosef: #BA4C3D;
     --fade: #A66860;
     --beige: #C8AD7F;
-    --beige2: #F0CFAE;
-
-}
+    --beige2: #F0CFAE;}
 
 *{box-sizing: border-box;}
 
 img{width:100%;}
-.cerise{width:100%;}
 
-a{text-decoration:none; color: var(--rosef); font-size:medium; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+a{text-decoration:none; color: var(--rosef); font-size:medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-.container{width: 80rem; margin-inline: auto;}
+.container{width:80rem; margin-inline:auto;}

@@ -26,14 +26,26 @@ const Nav = () => {
 				<Link to={"/prestation"}>Prestation</Link>
 				<Link to={"/reserver"}>Reserver</Link>
 			</nav>
-			{}
+		
+			<div className={styles["site-logo"]}>
+            {/* utiliser / pour cibler le dossier public */}
+			
+            <Link to={"/reservation"}>
+            <button className={styles["btn-rdv"]} 
+    		type="button" onClick={ click }>
+       		 Réservation
+        	</button>
+
+            </Link>
+        </div>
 
 			<button
 				className={styles["btn-nav-mobile"]}
 				type="button"
 				onClick={click}
 			>
-				Reserver
+				=
+
 			</button>
 		</>
 	);
