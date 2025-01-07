@@ -3,7 +3,7 @@ import HomePage from "../page/HomePage";
 import ContactPage from "../page/ContactPage";
 import BaseLayout from "../layout/BaseLayout";
 import PrestationPage from "../page/PrestationPage";
-import ReserverPage from "../page/ReserverPage";
+import TarifsPage from "../page/TarifsPage";
 
 const router = createBrowserRouter([
 	{
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
 				element: <PrestationPage />,
 			},
 			{
-				path: "/reserver",
-				element: <ReserverPage />,
+				path: "/tarifs",
+				element: <TarifsPage />,
 			},
 		],
 	},

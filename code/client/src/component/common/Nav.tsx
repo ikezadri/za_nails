@@ -21,10 +21,10 @@ const Nav = () => {
 				className={`${styles["site-nav"]} ${navMobileIsVisible ? styles["site-nav-visible"] : ""}`}
 				ref={siteNav}
 			>
-				<Link to={"/"}>Home</Link>
+				{/* <Link to={"/"}>Home</Link> */}
 				<Link to={"/contact"}>Contact</Link>
 				<Link to={"/prestation"}>Prestation</Link>
-				<Link to={"/reserver"}>Reserver</Link>
+				<Link to={"/tarifs"}>Tarifs</Link>
 			</nav>
 		
 			<div className={styles["site-logo"]}>
