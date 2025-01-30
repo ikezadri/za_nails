@@ -1,12 +1,14 @@
 /* le suffixe module.css permet d'isoler les styles d'un composant */
 
 .site-header{
-    background-color:var(--beige2); 
+    background:var(--rose); 
     display:flex; 
     height:5rem; 
     justify-content:space-between; 
     align-items:center;} 
 
-.site-logo{width:8rem;} 
+.site-logo{
+    width:8rem;
+    padding-top:1rem;} 
 
 .btn-nav-mobile{display:none;}

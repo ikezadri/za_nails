@@ -1,6 +1,6 @@
 .site-footer{
-    background-color: var(--bordeaux); 
-    color: var(--beige2);
+    background: var(--mauve); 
+    color: var(--violetf);
     display:flex; 
     width:100%; 
     height:6rem; 
