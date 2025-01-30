@@ -42,10 +42,8 @@ const Nav = () => {
 			<button
 				className={styles["btn-nav-mobile"]}
 				type="button"
-				onClick={click}
-			>
+				onClick={click}>
 				=
-
 			</button>
 		</>
 	);

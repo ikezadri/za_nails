@@ -1,12 +1,10 @@
 /* style communs à toutes les pages */
 :root{
-    --bordeaux: #6D071A;
-    --rose: #E97A66;
+    --violetf: #432373;
+    --mauve: #CCA9DD;
     --bcasser: #FFFFD8;
-    --rosef: #BA4C3D;
-    --fade: #A66860;
-    --beige: #C8AD7F;
-    --beige2: #F0CFAE;}
+    --rose: #FD6C9E;
+    --barbapapa: #FFC2D8;}
 
 *{box-sizing:border-box;}
 
@@ -14,7 +12,7 @@ img{width:100%;}
 
 a{
     text-decoration:none; 
-    color: var(--rosef); 
+    color: var(--barbapapa); 
     font-size:medium; 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
