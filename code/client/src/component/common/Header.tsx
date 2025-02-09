@@ -10,7 +10,7 @@ const Header = () => {
 			<div className={styles["site-logo"]}>
 				{/* utiliser / pour cibler le dossier public */}
 				<Link to={"/"}>
-					<img src="/public/img/four.nails-logo.png" alt="" />
+					<img src="/img/four.nails-logo.png" alt="" />
 				</Link>
 			</div>
 			<button className={styles["btn-nav-mobile"]} type="button">

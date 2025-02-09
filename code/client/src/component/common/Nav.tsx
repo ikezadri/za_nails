@@ -22,9 +22,9 @@ const Nav = () => {
 				ref={siteNav}
 			>
 				{/* <Link to={"/"}>Home</Link> */}
-				<Link to={"/contact"}>Contact</Link>
-				<Link to={"/prestation"}>Prestation</Link>
-				<Link to={"/tarifs"}>Tarifs</Link>
+				<Link to={"/contact"}>Prestation</Link>
+				<Link to={"/prestation"}>Tarifs</Link>
+				<Link to={"/tarifs"}>Contact</Link>
 			</nav>
 		
 			<div className={styles["site-logo"]}>
