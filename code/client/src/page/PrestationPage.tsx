@@ -5,7 +5,7 @@ const PrestationPage = () => {
 	return (
 		<>
 		<div className={styles.caca}>
-			<h1>Regarde comment je dead chakal</h1>
+			<h1>1k minimum</h1>
 		</div>
 		</>
 	);

@@ -5,7 +5,7 @@ const TarifsPage = () => {
 	return (
 		<>
 		<div className={styles["page-tarifs"]}>
-			<h1>Un 10 balles ?</h1>
+			<h1>Je donne pas mon snap</h1>
 		</div>
 		</>
 	);

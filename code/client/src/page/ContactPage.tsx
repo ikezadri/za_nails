@@ -4,7 +4,7 @@ const ContactPage = () => {
 	return ( 
     <> 
     <div className={styles["page-contact"]}>
-        <h1>Qui veut mon 06 ?</h1>
+        <h1>Commence a apprécier ce que tu vois</h1>
     </div> 
     
     </>
